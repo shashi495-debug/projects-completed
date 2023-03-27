@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>List</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="styles/list.css">
+  <link rel="stylesheet" href="styles/loader.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 5;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</head>
+<body onload="myFunction()">
+  <div id="loader"></div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+
+    <header id="headerId"></header>
+
+    <div name="content" id="content">
+      <div id="viewbuttons">
+        <div id="navPills">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#list-view" role="tab"
+                aria-controls="pills-home" aria-selected="true">List View</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#image" role="tab"
+                aria-controls="pills-profile" aria-selected="false">Map View</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="list-view" role="tabpanel" aria-labelledby="pills-home-tab">
+
+            <div id="siteImages" class="row">
+
+            </div>...
+          </div>
+          <div class="tab-pane fade" id="image" role="tabpanel" aria-labelledby="pills-profile-tab">
+<h3>Taj Palace</h3>
+  
+            <div id="mapImage">
+              <img id="image" src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" /><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <footer id="footerId"></footer>
+   
+
+
+  </div>
+
+
+  <script>
+
+
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+
+
+  </script>
+
+  <script src="scripts/common.js"></script>
+
+  <script src="scripts/list.js"></script>
+
+</body>
+
+</html>

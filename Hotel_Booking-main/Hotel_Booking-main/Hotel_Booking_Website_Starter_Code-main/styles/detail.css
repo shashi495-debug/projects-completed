@@ -1,0 +1,174 @@
+html,body,#main { 
+
+  min-height: 100vh; 
+
+  }
+
+  html, body {
+
+      max-width: 100%;
+
+      overflow-x: hidden;
+
+      }
+
+body{
+  background-color: #e0e0e0;
+  margin: 0%;
+  font-family:  'Ubuntu',sans-serif;
+  }
+
+a{
+  text-decoration: none;
+  color:black;
+}  
+
+input{
+  width:60%;
+}
+
+img{
+  max-height: 350px;
+}
+
+header,footer{
+      background-color: rosybrown;
+  }   
+
+header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index: 5;
+}
+
+header a{
+  padding-left:10px;
+}
+
+#mainLogo{
+  height:60px;
+  width:60px
+}
+
+#login{
+  margin-right: 2%;
+  padding-right:1%;
+} 
+
+#contentDiv{
+  height:auto;
+  margin-top: 85px;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 85px;
+} 
+
+#firstDivOfContentDiv{
+  display:flex;
+  max-height: 400px;
+}
+
+#block1{
+  border: 1px solid black;
+  width: 800px;
+  max-height: auto;
+  text-align: center;
+  
+}
+
+#block1 .carousel{
+  margin-top:0%;
+  margin-bottom: 3%;
+}
+
+#siteImage{
+   margin-top: 2%;
+   margin-bottom: 2%;
+  }
+
+#block2{
+  border: 1px solid black;
+  width:600px;
+}
+
+.formDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 3%;
+}
+
+.forms{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+.forms .btn{
+  background-color: #e0e0e0;
+}
+
+.forms .btn:hover{
+  background-color: #28A745;
+  color: black;
+}
+
+.label{
+  width:200px;
+}
+
+
+
+input{
+  height:30px;
+
+  width: 100%;
+
+}
+
+#block-3{
+
+  text-align: left;
+
+}
+
+footer{
+
+  position: fixed;
+  bottom:0;
+  left:0;
+  width:100%
+}
+        
+
+.socialMedia{
+  height: 20px;
+  width: 22px;
+}
+
+#subFooter1{
+  display:flex;
+  justify-content: space-between;
+  justify-content: baseline;
+  align-items: center;
+}
+
+#contactUsDiv{
+  margin-left: 2%;
+  margin-top: 1.3%;
+  margin-bottom: 1.3%;
+}
+#copyRightText{
+  text-align: center;
+  font-size: 10px;
+}
+
+#socialMediaIcons{
+  padding: 10px;
+} 

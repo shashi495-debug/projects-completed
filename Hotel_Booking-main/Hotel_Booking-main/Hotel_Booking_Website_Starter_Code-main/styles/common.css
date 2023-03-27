@@ -1,0 +1,90 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #e0e0e0;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+header nav{
+  background-color: rosybrown;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+
+}
+header nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+header .anchor{
+  position: absolute;
+  right:15px;
+  margin-right: 2%;
+}
+header a{
+  text-decoration: none;
+  color: black;
+}
+header img {
+  height: 60px;
+  width: 60px;
+  margin-left: 1%;
+}
+
+footer {
+  background-color: rosybrown;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+}
+footer a{
+  text-decoration: none;
+  color: black;
+  margin-left: 2%;
+}
+footer p{
+  position: absolute;
+  left: 44%;
+  /* float: center; */
+  font-size: 10px;
+}
+footer .logo{
+  display: flex;
+  position: absolute;
+  right: 10px;
+  margin-right: 2%;
+}
+footer img {
+  height: 20px;
+  width: 22px;
+}
+
+@media screen and (max-device-width: 576px){
+  footer {
+      background-color: rosybrown;
+      display: flex;
+      align-items: center;
+      height: 90px;
+      position: fixed;
+      width: 100%;
+      bottom: 0px;
+  }
+
+  footer .btn{
+      width: 105px;
+      height: 35px;
+  }
+  footer p{
+      position: absolute;
+      left: 38%;
+      /* float: center; */
+      font-size: 10px;
+      top: 5px;
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Index</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/loader.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 5;
+    }
+  </style>
+</head>
+<body onload="myFunction()">
+  <div id="loader"></div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+
+    <header id="headerId"></header>
+ 
+    <div name="content" id="content">
+      <div id="search">
+        <input type="text" id="searchBar" placeholder="City" onchange="autoComplete()"/><br>
+        <a href="list.html"><button type="submit" id="form-button" href="list.html" onclick="searchButton()">Search</button></a>
+      </div>
+      <div class="row">
+        <div class="siteImageDiv col-12 col-xs-12 col-sm-12 col-md-6 col-lg-3 " id="firstImageSiteDiv"><a
+            href="list.html" onclick="delhiButton()" target="_self"><img class="siteImages"
+              src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" /></a>
+          <div id="delhicentered">Delhi</div>
+        </div>
+
+        <div class="siteImageDiv col-12 col-xs-12 col-sm-12 col-md-6 col-lg-3" id="secondImageSiteDiv"><a
+          href="list.html" onclick="goaButton()" target="_self"><img class="siteImages" 
+          src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" /></a>
+          <div id="goacentered">Goa</div>
+        </div>
+
+        <div class="siteImageDiv col-12 col-xs-12 col-sm-12 col-md-6 col-lg-3" id="thirdImageSiteDiv"><a
+          href="list.html" onclick="charminarButton()" target="_self"><img class="siteImages" 
+          src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" /></a>
+          <div id="charminarcentered">CharminAr</div>
+        </div>
+
+        <div class="siteImageDiv col-12 col-xs-12 col-sm-12 col-md-6 col-lg-3" id="fourthImageSiteDiv"><a
+          href="list.html" onclick="calcuttaButton()" target="_self"><img class="siteImages" id="lastImageSite"
+            src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" /></a>
+          <div id="calcuttacentered">Calcutta</div>
+        </div><br>
+      </div>
+
+      <div id="createSpace" style="display:none"></div>
+
+      <div id="row" style="display:none"></div>
+     
+      <div id="viewMore">
+        <a class="btn btn-secondary btn-lg active" id="viewButton" role="button" onclick="popUp()"
+          aria-pressed="true">View more</a>
+      </div>
+    </div>
+   
+    <footer id="footerId"></footer>
+
+  </div>
+  
+  <script>
+    var myVar;
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+  </script>
+ 
+  <script src="scripts/common.js"></script>
+  
+  <script src="scripts/index.js"></script>
+  
+</body>
+</html>

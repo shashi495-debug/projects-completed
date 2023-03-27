@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Detail</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- /CSS link -->
+  <link rel="stylesheet" href="styles/detail.css">
+  <link rel="stylesheet" href="styles/loader.css">
+  <!-- CSS link/ -->
+  <!-- Fonts link -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Fonts -->
+  <!-- /Fonts Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- fonts/ -->
+  <!-- /Bootstrap link-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- Bootstrap/ -->
+  <!-- /Javascript link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- Javascript/ -->
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 5;
+    }
+  </style>
+</head>
+<body onload="myFunction()">
+  <div id="loader"></div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+    <!-- /Header (innerHTML in common.js file)-->
+    <header id="headerId"></header>
+    <!-- Header/ -->
+    <!--/ Content -->
+    <div name="content" id="contentDiv" class="row">
+      <div id="block1" class="col-12 col-sm-8">
+      </div>
+      <div id="block2" class="col-12 col-sm-4">
+        <form action="payment.html">
+
+          <div class="formDiv">
+            <div class="forms">
+              <div class="label">
+                <label>Adults:</label>
+              </div>
+              <input type="number" placeholder="1" min="1" id="number" onkeyup="sum()" onblur="storeNoOfAdults()" required>
+            </div>
+            <div class="forms">
+              <div class="label">
+                <label>Name:</label>
+              </div>
+              <input type="text" id="Name" onblur="storeName()" required>
+            </div>
+            <div class="forms">
+              <div class="label">
+                <label>From Date:</label>
+              </div>
+              <input type="date" id="fromDate" onblur="storeFromDate()" required>
+            </div>
+            <div class="forms">
+              <div class="label">
+
+
+  
+                <label>To Date:</label>
+              </div>
+              <input type="date" id="toDate" onblur="sum()" required>
+            </div>
+            <div class="forms">
+              <div class="label">
+                <label>Total:</label>
+              </div>
+              <!-- min is 1000 rupees -->
+              <input id="total" value="1000" disabled>
+            </div>
+            <div class="forms" style="margin:auto">
+              <a href="payment.html"><button type="submit" class="btn btn-primary btn btn-outline-success" onclick="formButton()">Book Now</button></a>
+            </div>
+          </div>
+        </form>
+
+      </div>
+      <div id="block-3" class="col-12 col-sm-12">
+        <h2>Radisson Blu Hotel</h2>
+        <p><b>RATING</b></p>
+        <p><span class="material-icons-outlined material-icons" style="color: gold;">
+            star
+          </span>
+          <span class="material-icons-outlined material-icons" style="color: gold;">
+            star
+          </span>
+          <span class="material-icons-outlined material-icons" style="color: gold;">
+            star
+          </span>
+          <span class="material-icons-outlined material-icons" style="color: gold;">
+            star
+          </span>
+          <span class="material-icons-outlined material-icons" style="color: gold;">
+            star_half
+          </span>
+        </p>
+        <p><b>AMENITIES</b></p>
+        <ul>
+          <li>Room service</li>
+          <li>Restaurant</li>
+          <li>Business center</li>
+          <li>Fitness center</li>
+          <li>Pool</li>
+        </ul>
+        <h5><b>DESCRIPTION</b></h5>
+        <p>Lorem ipsum dolor sit swweamet consectetur adipisicing elit. Nisi ad eveniet veritatis asperiores! Aperiam porro
+          molestiae incidunt autem fugiat facere debitis consectetur sint labore inventore iste, tempora nesciunt rerum
+          enim.</p>
+      </div>
+    </div>
+   
+    <footer id="footerId"></footer>
+   
+  </div>
+
+  <script>
+    var myVar;
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+  </script>
+  <script src="scripts/common.js"></script>
+  
+  <script src="scripts/detail.js"></script>
+</body>
+</html>

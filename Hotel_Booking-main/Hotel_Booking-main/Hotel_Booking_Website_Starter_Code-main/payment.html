@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment</title>
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles/payment.css">
+  <link rel="stylesheet" href="styles/loader.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</head>
+<body onload="myFunction()">
+  <div id="loader"></div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+  
+    <header id="headerId"></header>
+  
+    <div name="content" id="content">
+      <div id="imageWithData">
+        <div id="siteImageDiv">
+          <img id="siteImage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" />
+        </div>
+        <div id="hoteladdress">
+          <h2>&nbsp Radisson Blu Hotel</h2>
+          <p>&nbsp #38 of 1,289 hotels in New Delhi</p>
+          <p>&nbsp National Highway 8, New Delhi 110017 India</p>
+        </div>
+      </div>
+      <div style="width:100%; height:100px" id="midDiv"></div>
+      <div id="billAndData" class="row">
+        <div id="dataAboutCustomer" class="insideBillAndData col-12 col-sm-4">
+   
+        </div>
+        <div id="dataAboutAmount" class="insideBillAndData col-12 col-sm-4">
+    
+        </div>
+        <div id="paymentLink" class="insideBillAndData col-12 col-sm-4">
+          <button type="button" class="btn btn-success" onclick="payNow()">Pay Now</button>
+
+        </div>
+      </div>
+      <div style="width:100%; height:100px"></div>
+    </div>
+
+    <footer id="footerId"></footer>
+    
+  </div>
+  
+  <script>
+    var myVar;
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+  </script>
+  
+  <script src="scripts/common.js"></script>
+ 
+  <script src="scripts/payment.js"></script>
+  
+</body>
+</html>

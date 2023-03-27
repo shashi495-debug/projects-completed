@@ -1,0 +1,183 @@
+html,
+body,
+#main {
+    min-height: 100vh;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    }
+body {
+    background-color: #e0e0e0;
+    margin: 0%;
+    font-family: 'Ubuntu', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+header,
+footer {
+    background-color: rosybrown;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+header img {
+    margin-left: 10px;
+}
+#mainLogo {
+    height: 60px;
+    width: 60px
+}
+#login {
+    margin-right: 2%;
+    padding-right: 1%;
+}
+#content {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+#search {
+    background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#form-button {
+    background: lightblue;
+    padding: 10px 40px;
+    border: 0ch;
+}
+
+
+
+input {
+
+    background-color: #f1f1f1;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 10px;
+    width: 30%;
+    font-size: 16px;
+}
+input:focus {
+    outline: none;
+}
+#siteImagesinDiv {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.siteImages:hover {
+    opacity: 0.8;
+}
+.siteImageDiv {
+    margin-right: 100px;
+    margin-top: 50px;
+    margin: auto;
+}
+.siteImages {
+    height: 150px;
+    width: 150px;
+    border-radius: 40px;
+    margin: 4%;
+    box-shadow: 10px 10px 10px gray;
+}
+.row {
+    text-align: center;
+}
+#delhicentered {
+    visibility: hidden;
+}
+#firstImageSiteDiv:hover div {
+    visibility: visible;
+    position: relative;
+    bottom: 95px;
+    left: 2px;
+    color: white;
+}
+#goacentered {
+    visibility: hidden;
+}
+#secondImageSiteDiv:hover div {
+    visibility: visible;
+    position: relative;
+    bottom: 95px;
+    left: 2px;
+    color: white;
+}
+#charminarcentered {
+    visibility: hidden;
+}
+#thirdImageSiteDiv:hover div {
+    visibility: visible;
+    position: relative;
+    bottom: 95px;
+    left: 2px;
+    color: white;
+}
+#calcuttacentered {
+    visibility: hidden;
+}
+#fourthImageSiteDiv:hover div {
+    visibility: visible;
+    position: relative;
+    bottom: 95px;
+    left: 2px;
+    color: white;
+}
+#createSpace{
+    height:90px;
+}
+#row{
+    display:flex;
+    margin:0;
+}
+#viewMore {
+    text-align: center;
+    padding: 35px;
+    padding-bottom: 50px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%
+}
+.socialMedia {
+    height: 20px;
+    width: 22px;
+}
+#subFooter1 {
+    display: flex;
+    justify-content: space-between;
+    justify-content: baseline;
+    align-items: center;
+}
+#contactUsDiv {
+    margin-left: 2%;
+    margin-top: 1.3%;
+    margin-bottom: 1.3%;
+}
+#copyRightText {
+    text-align: center;
+    font-size: 10px;
+}
+#socialMediaIcons {
+    padding: 10px;
+}
